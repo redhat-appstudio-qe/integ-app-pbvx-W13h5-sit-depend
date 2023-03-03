@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: integration-suite-test-component-git-source-gbjj
+  namespace: integration-e2e-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:fec103d83feb1d35736207f09795b98068407b8f7d15c0b2eab07c2f04aeedbc
+        name: my-python
+        resources: {}
+status: {}
